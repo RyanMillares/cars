@@ -9,7 +9,7 @@ do
 	echo "Choose one of the following."
 	echo "[add]: Add a car."
 	echo "[list]: List all cars."
-	echo "[] "
+	echo "[tracer]: I wanna be tracer "
 	echo "[quit]: exit the program."
 	read ANS
 	case "$ANS" in
@@ -23,7 +23,9 @@ do
 		"list") 
 			sort My_old_cars | tr ':' ' ' 
 			echo "";;
-
+		"tracer")
+			echo "I'm already tracer"
+			echo "";;
 		"quit")
 			echo "Quitting...";;
 		*) 
