@@ -9,6 +9,7 @@ do
 	echo "Choose one of the following."
 	echo "[add]: Add a car."
 	echo "[list]: List all cars."
+	echo "[] "
 	echo "[quit]: exit the program."
 	read ANS
 	case "$ANS" in
@@ -20,7 +21,7 @@ do
 			echo "Car added."
 			echo " ";;
 		"list") 
-			sort My_old_cars
+			sort My_old_cars | tr ':' ' ' 
 			echo "";;
 
 		"quit")
